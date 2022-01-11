@@ -1,6 +1,7 @@
 // const socket = io();
 // alert("hi");;
 let Name;
+var audio = new Audio('audio_file.wav');
 let textarea = document.querySelector("#textarea");
 let messageArea = document.querySelector(".message_area");
 let chatSection = document.querySelector(".chat__section");
@@ -12,7 +13,7 @@ do {
 chatBot.addEventListener("click",(e)=>{
     chatSection.style.display="block";
     chatBot.style.display="none";
-    var audio = new Audio('audio_file.wav');
+//     var audio = new Audio('audio_file.wav');
     audio.play();
 });
 closeSection.addEventListener("click",(e)=>{
